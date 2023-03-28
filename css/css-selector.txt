@@ -1,0 +1,34 @@
+element selector
+class selector
+id selector
+p.center => p tage with center class
+"*" universal selector
+grouping of elements h1, h2, p
+
+combinator selector
+decendent selector => div p => all p tags which is decendent of div tag
+child selector => div > p => all p tags which is child of div
+adjecent sibling => div + p => select p tag immediate after div tag
+general sibling => div ~ p => select all p tag after div tag
+
+pseduo-class selector
+anchor pseduo class => hover, link, visisted, active
+p:first-child => select p tag if it is first child of any element
+p i:first-child => match all first i tag from p tag
+p:first-child i => select i tag from p tag which is first child of any element
+
+pseduo - element selector 
+::first-line
+::first-letter
+::before
+::after
+::marker => selecte marker of list
+::selection => selected element
+
+attribute selectro
+a[target], a[terget="_blank"]
+[title~="flower"] select element with title flower
+[class|="top"] select element with class=top or class name followed by top- ex: class=top-content
+[class^="top"] class attributes value start with top
+[class$="top"] class attributes value ends with top
+[class*="te"] class attribute containes given value 

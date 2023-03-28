@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px 25px;
+}
+
+.logo-image {
+  height: 36px;
+}
+
+.lang-options {
+  padding: 7px 17px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  margin-right: 10px;
+}
+
+.lang-options option {
+  background-color: gray;
+}
+
+.sign-in-btn {
+  color: white;
+  background-color: #e50914;
+  padding: 7px 17px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.bg-img {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  border-bottom: 8px solid #222;
+}
+
+.bg-img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.our-story-card {
+  position: absolute;
+  top: 20%;
+  color: white;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
+.our-story-card-text {
+  width: max-content;
+  margin: auto;
+}
+
+.our-story-card-text h1 {
+  /* font-size: 4vw; */
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+.our-story-card-text h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.our-story-card-text form h3 {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.email-input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 500px;
+  font-size: 1.3rem;
+}
+
+.get-started-btn {
+  color: white;
+  background-color: #e50914;
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.our-story-card-2 {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* position: relative; */
+}
+
+/* .our-story-card-2 h1 {
+  font-size: 3.2rem;
+  max-width: 540px;
+  text-align: center;
+  margin: 30px auto;
+} */
+/* .our-story-card-2 h2 {
+    text-align: center;
+    font-weight: 400;
+    max-width: 640px;
+    margin: auto;
+} */
+
+/* .our-story-card-2 img {
+    width: 640px;
+    margin: auto;
+    z-index: 2;
+}
+
+.our-story-card-2 div {
+    position: absolute;
+    top: 265px;
+} */
+
+.tv-container {
+  position: relative;
+}
+
+.tv-container img {
+  z-index: 2;
+}
+
+.tv-container video {
+  position: absolute;
+  top: 99px;
+  left: 78px;
+  z-index: 1;
+}

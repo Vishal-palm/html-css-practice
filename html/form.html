@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <style>
+        form {
+            border: 1px solid rgb(140, 140, 140);
+            border-radius: 5px;
+            width: 350px;
+            padding: 10px;
+            background-color: rgb(205, 251, 251);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+        }
+
+        form div {
+            margin: 10px;
+            display: flex;      
+            flex-direction: column;
+        }
+
+        form div label {
+            margin-right: 15px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        input {
+            padding: 7px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        #gender-inputs {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+        #gender-inputs span{
+            margin-right: 20px;
+        }
+        input[type=radio], input[type=checkbox] {
+            accent-color: rgb(12, 146, 255);
+        }
+        select {
+            border: none;
+            height: 30px;
+        }
+        textarea {
+            border: none;
+            border-radius: 3px;
+        }
+        #terms {
+            display: inline;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(12, 146, 255);
+            color: white;
+            font-weight: 700;
+            font-size: large;
+        }
+        button:hover {
+            box-shadow: 2px 2px 2px rgb(181, 181, 181);
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>HTML Form</h2>
+
+    <form method="post" action=""> 
+
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" placeholder="Enter Username" maxlength="30">
+        </div>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Enter password" min="6" max="16">
+        </div>
+            
+        <div>
+            <label for="confirm-password">Confirm Password: </label>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Enter password agian" min="6" max="16">
+        </div>
+
+        <div>
+            <label for="dob">DOB: </label>
+            <input type="date" name="dob" id="dob">
+        </div>
+
+        <div>
+            <label for="gender">Gender: </label>
+            <div id="gender-inputs">
+                <span><input type="radio" name="gender" id="male" checked> male</span>
+                <span><input type="radio" name="gender" id="female"> Female</span>
+                <span><input type="radio" name="gender" id="other"> Other</span>
+            </div>
+        </div>
+
+        <div>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="surat">Surat</option>
+                <option value="valsad">Valsad</option>
+                <option value="Vadodra">Vadodra</option>
+                <option value="ahemdabad">Ahemdabad</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="30" rows="3"></textarea>
+        </div>
+
+        <div id="terms">
+            <input type="checkbox" name="t&c" id="t&c">
+            <span>Accept Terms And Coditions</span>
+        </div>
+
+        <div>
+            <Button type="submit">Submit</Button>
+        </div>
+
+    </form>
+</body>
+</html>

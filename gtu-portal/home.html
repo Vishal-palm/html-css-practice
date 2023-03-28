@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #home-container {
+        margin: 20px 20px 0;
+        padding: 20px 20px 0;
+      }
+      .img-bg {
+        background-color: #002b5b;
+        background: rgb(77, 59, 138);
+        background: radial-gradient(
+          circle,
+          rgba(77, 59, 138, 1) 0%,
+          rgba(49, 80, 116, 1) 100%
+        );
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 150px;
+      }
+
+      #home-container img {
+        position: absolute;
+        top: 75px;
+        border: 5px solid white;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        margin-left: 20px;
+      }
+
+      .circle {
+        height: 200px;
+        width: 200px;
+        border: 10px solid #ffb100;
+        border-radius: 50%;
+        position: absolute;
+        top: -80px;
+        right: 0px;
+        outline: 3px solid #9d3c72;
+        outline-offset: 15px;
+      }
+      .profile-data {
+        margin-top: 100px;
+        margin-left: 30px;
+      }
+      table {
+        margin-top: 20px;
+      }
+      td:nth-child(1) {
+        border-left: 5px solid #002b5b;
+        padding-left: 10px;
+        max-width: 200px;
+        min-width: 150px;
+      }
+      tr {
+        margin-bottom: 10px;
+        display: block;
+        font-size: large;
+      }
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="home-container">
+      <div class="img-bg">
+        <img
+          src="https://occ-0-3776-58.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png?r=420"
+          alt="profile-image"
+        />
+      </div>
+      <div class="circle"></div>
+      <div class="profile-data">
+        <h2>Vishal Parmar</h2>
+        <h3>Computer Engineering</h3>
+      </div>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <td>Course:</td>
+              <td>BE</td>
+            </tr>
+            <tr>
+              <td>Branch:</td>
+              <td>07 - COMPUTER ENGINEERING</td>
+            </tr>
+            <tr>
+              <td>College:</td>
+              <td>
+                042 - SARVAJANIK COLLEGE OF ENGINEERING &amp; TECHNOLOGY, SURAT
+              </td>
+            </tr>
+            <tr>
+              <td>Academic Status:</td>
+              <td>Studying</td>
+            </tr>
+            <tr>
+              <td>Current Sem:</td>
+              <td>7</td>
+            </tr>
+
+            <tr>
+              <td>Last Appeard Exam:</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>CPI</td>
+              <td>7.40</td>
+            </tr>
+            <tr>
+              <td>CGPA</td>
+              <td>7.52</td>
+            </tr>
+            <tr>
+              <td>Final Sem:</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>Term End:</td>
+              <td>S2025</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

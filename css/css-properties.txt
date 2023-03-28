@@ -1,0 +1,70 @@
+#### text - properties
+
+text-color
+text-alignment
+text-align-last => align last line of text
+direction: rtl
+uniceode
+verticl-align
+
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+
+text-decoration:none
+
+text-transforme
+
+letter-spacing
+text-indent
+line-height
+word-spacing 
+white-space => nonewrap/normal/pre
+
+text-shadow
+
+### font - properties
+font-style
+font-size
+font-weight
+font-variant => normal/small-caps
+
+default font size = 16px = 1em
+
+
+### position
+
+static => default value
+fixed => fixed to viewport
+absolute => relative to nearest positioned ancestor
+relative => relative to normal postion
+sticky => stick to the users scroll
+
+### overflow
+=> overflow-x/overflow-y/overflow-wrap
+visible
+hidden
+auto
+scroll
+
+### float/clear
+
+### display
+block => cover entier with
+inline => cover with taken by content 
+inline-block => allows to set width and height of element
+
+### relative units
+em	 => Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	 => Relative to the x-height of the current font (rarely used)	
+ch	 => Relative to width of the "0" (zero)	
+rem	 => Relative to font-size of the root element	
+vw	 => Relative to 1% of the width of the viewport*	
+vh	 => Relative to 1% of the height of the viewport*	
+vmin =>	Relative to 1% of viewport's* smaller dimension	
+vmax =>	Relative to 1% of viewport's* larger dimension	
+%	 => Relative to the parent element
+
+specificity
+id > class > element

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(83, 83, 83);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.4rem;
+        }
+
+        main {
+            display: flex;
+
+        }
+        .side-panels {
+            background-color: gray;
+            color: white;
+        }
+        nav ul{
+            list-style: none;
+            width: 200px;
+            text-align: center;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            /* align-items: center; */
+            flex-direction: column;
+        }
+        nav ul li  {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        .content {
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: rgb(83, 83, 83);
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello world</h1>
+    </header>
+    <main>
+        <nav class="side-panels">
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, non? Reprehenderit nesciunt aliquam sapiente animi ex nam labore unde quia minus, molestias quae, voluptate culpa dolorum temporibus quas dignissimos facere!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta numquam, totam hic ullam laborum nesciunt quam quis dignissimos exercitationem animi fugit sequi, commodi voluptates odio quo atque quidem fugiat incidunt?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, blanditiis praesentium ducimus, laborum minus illum cum animi, necessitatibus doloremque autem a. Quidem doloribus, autem dignissimos adipisci iste numquam at cumque!
+            </p>
+        </div>
+        <div class="side-panels about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates explicabo cupiditate nulla soluta </p>
+        </div>
+    </main>
+    <footer>© copyright w3schools.com</footer>
+</body>
+</html>

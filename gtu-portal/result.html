@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <style>
+      #result-container {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 7px 7px 10px 0px rgba(84, 84, 84, 1);
+        margin: 10px;
+        padding: 10px;
+      }
+
+      #result-container h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        border-bottom: 2px solid rgb(189, 189, 189);
+      }
+      .table {
+        margin: auto;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      .table td {
+          padding: 10px;
+          
+        }
+        .table{
+            background-color: rgb(209, 209, 209);
+        }
+        .table th {
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+        .table2 {
+            margin: 10px auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        .table2 td {
+            padding: 10px 20px;
+        }
+        .td-green {
+            color: green;
+            padding: 10px;
+            font-size: large; 
+        }
+        .print-btn {
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 7px;
+            background-color: #002b5b;
+            color: white;
+            font-size: large;
+        }
+
+        select {
+            outline: none;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="result-container">
+      <h1>Student Result</h1>
+      <label for="exam">Exam</label>
+      <select name="exam" id="exam">
+        <option value="sem6">Sem - 6</option>
+        <option value="sem5">Sem - 5</option>
+        <option value="sem4">Sem - 4</option>
+        <option value="sem3">Sem - 3</option>
+        <option value="sem2">Sem - 2</option>
+        <option value="sem1">Sem - 1</option>
+      </select>
+    </div>
+    <div id="result-container">
+      <table class="table">
+        <tr>
+            <th>SUBJECT CODE</th>
+            <th>SUBJECT NAME</th>
+            <th>Theory Grade</th>
+            <th>Practical Grade</th>
+            <th>Subject Grade</th>
+        </tr>
+        <tr>
+            <td>3160001</td>
+            <td>Design Engineering II B</td>
+            <td>-</td>
+            <td>AA</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>3160002</td>
+            <td>Contributor Personality Development Program</td>
+            <td>AA</td>
+            <td>AB</td>
+            <td>AA</td>
+        </tr>
+        <tr>
+            <td>3160704</td>
+            <td>Theory of Computation</td>
+            <td>CC</td>
+            <td>-</td>
+            <td>CC</td>
+        </tr>
+        <tr>
+            <td>3160707</td>
+            <td>Advanced Java Programming</td>
+            <td>BC</td>
+            <td>AA</td>
+            <td>BB</td>
+        </tr>
+        <tr>
+            <td>3160712</td>
+            <td>Microprocessor and Interfacing</td>
+            <td>CC</td>
+            <td>AB</td>
+            <td>BC</td>
+        </tr>
+        <tr>
+            <td>3160713</td>
+            <td>Web Programming</td>
+            <td>BC</td>
+            <td>AA</td>
+            <td>BB</td>
+        </tr>
+        <tr>
+            <td>3160717</td>
+            <td>Data Visualization</td>
+            <td>BC</td>
+            <td>AA</td>
+            <td>BB</td>
+        </tr>
+      </table>
+
+      <table class="table2">
+        <tr>
+            <td>Current Sem. Backlog: 0</td>
+            <td>Total Backlog: 0</td>
+            <td>SPI: 7.65</td>
+            <td>CPI: 7.40</td>
+            <td>CGPA: 7.52</td>
+        </tr>
+        <tr><td colspan="5"></td></tr>
+        <tr>
+            <td colspan="5" class="td-green">Congratulation!! You have passed this exam.</td>
+        </tr> 
+        <tr>
+            <td colspan="5"><button class="print-btn">Print</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
